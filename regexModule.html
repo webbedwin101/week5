@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myDiv">
+
+
+    </div>
+    <script>
+    const paragraph = 'The quick brown fox jumps over the lazy dog. If the dog barked, was it really lazy?';
+
+        // any character that is not a word character or whitespace
+        const regex = /[^\w\s]/g;
+        
+        console.log(paragraph.search(regex));
+        // expected output: 43
+        
+        console.log(paragraph[paragraph.search(regex)]);
+    
+    </script>
+</body>
+</html>
